@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout de Formulário</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 110vh;
+        margin: 0;
+        background-image: url(https://img.freepik.com/fotos-gratis/fundo-abstrato-gradiente-azul-azul-escuro-liso-com-vinheta-preta-studio_1258-67766.jpg?w=740&t=st=1720285422~exp=1720286022~hmac=e39691728b7f7ee09fe0ab51eedce28a4a631e245453becfcfbfa6e7722eadee);
+        }
+
+        .input-container {
+            background-color: white;
+            padding: 80px; 
+            border-radius: 25px;    
+            margin-top: 50px;
+            grid-template-columns: max-content 1fr;
+        }
+
+        input {
+        justify-content: center;
+        text-align: center;
+        padding: 7px;
+        width: 100px;
+        height: 10px;
+        }
+
+        p{
+        align-self: center;
+        text-align: center;
+        margin: 1px;
+        }
+
+    </style>
+
+</head>
+<body>  
+    <div class="input-container">
+        <h1>Formulário</h1>
+
+        <p>Seu Nome</p><input label="Nome">
+        <p>E-mail</p><input label="E-mail">
+        <P>CPF</P><input label="CPF">
+        <p>Data de nascimento</p><input label="Data de nascimento">
+        
+        <h1>Endereço</h1>
+
+        <P>CEP</P><input label="CEP">
+        <p>Cidade</p><input label="Cidade">
+        <p>Bairro</p><input label="Bairro"> 
+        <p>Rua</p><input label="Rua">
+        <p>complemento</p><input label="complemento" placeholder="opcional">
+        
+    </div>
+    <a href="cards responsivo.html">Próxima Página</a>
+</body>
+</html>

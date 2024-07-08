@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: lightgray;
+            display: grid;
+            justify-content: center;
+            align-items: center; 
+            margin: 0;
+            background-image: url(https://img.freepik.com/fotos-gratis/fundo-abstrato-gradiente-azul-azul-escuro-liso-com-vinheta-preta-studio_1258-67766.jpg?w=740&t=st=1720285422~exp=1720286022~hmac=e39691728b7f7ee09fe0ab51eedce28a4a631e245453becfcfbfa6e7722eadee);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(250px, 1fr));
+            gap: 20px; 
+            padding: 20px; 
+            justify-items: center; 
+        }
+
+        .card {
+            display: grid; 
+            grid-template-columns: auto 1fr; 
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 7px 7px 13px 0 black;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            background-color: white;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            max-width: 70px; 
+            height: 70px; 
+            justify-self: end; 
+        }
+
+        .h2{
+            margin: 0; 
+            text-align: left; 
+        }
+        
+        .p {
+            margin: 0; 
+            text-align: left; 
+        }
+
+        h1{
+        text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cards Responsivo</h1>
+    <div class="container">
+        <div class="card">
+            <div>
+                <h2>Natura Kaiak Man</h2>
+                <p>76,90</p>
+            </div>
+            <img src="natura kaiak.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume CK One EUA</h2>
+                <p>265,99</p>
+            </div>
+            <img src="perfume ck.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume 1 Million</h2>
+                <p>604,99</p>
+            </div>
+            <img src="perfume 1 million.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume Ferrari </h2>
+                <p>184,99</p>
+            </div>
+            <img src="perfume.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume ARMAF black</h2>
+                <p>324,99</p>
+            </div>
+            <img src="perfume ARMAF.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume Piment</h2>
+                <p>55,99</p>
+            </div>
+            <img src="Perfume Piment.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume Malbec</h2>
+                <p>169,90</p>
+            </div>
+            <img src="Perfume Malbec Ultra Bleu Deo.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume Mercedesc</h2>
+                <p>285,90</p>
+            </div>
+            <img src="Perfume Mercedes.png">
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Perfume Sauvage</h2>
+                <p>800,90</p>
+            </div>
+            <img src="Perfume Sauvage.png">
+        </div>
+        
+    </div>
+    
+</body>
+</html>
